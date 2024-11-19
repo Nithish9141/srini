@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - My E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-details {
+            display: flex;
+            gap: 30px;
+        }
+        .product-images {
+            flex: 1;
+            text-align: center;
+        }
+        .product-images img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .product-info {
+            flex: 2;
+        }
+        .product-info h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .product-info .price {
+            font-size: 28px;
+            color: #4CAF50;
+            margin-top: 15px;
+        }
+        .product-info .description {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        .product-info .quantity-selector {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .product-info input {
+            padding: 8px;
+            width: 50px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .product-info button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .product-info button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>My E-Commerce Store</h1>
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+            <a href="/cart">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Product Detail Section -->
+        <div class="product-details">
+            <!-- Product Images -->
+            <div class="product-images">
+                <img src="product1.jpg" alt="Product Image"> <!-- Replace with actual product image -->
+            </div>
+
+            <!-- Product Information -->
+            <div class="product-info">
+                <h1>Product 1 Name</h1>
+                <div class="price">$49.99</div>
+
+                <div class="description">
+                    <h3>Product Description</h3>
+                    <p>This is a detailed description of the product. It can include features, specifications, and benefits that will help customers make a purchase decision.</p>
+                    <ul>
+                        <li>Feature 1: High-quality material</li>
+                        <li>Feature 2: Durable and long-lasting</li>
+                        <li>Feature 3: Easy to use</li>
+                        <li>Feature 4: Available in multiple colors</li>
+                    </ul>
+                </div>
+
+                <!-- Quantity Selector -->
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity: </label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My E-Commerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

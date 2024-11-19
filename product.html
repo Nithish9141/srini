@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing - My E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .filter-bar select, .filter-bar input {
+            padding: 8px;
+            font-size: 16px;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-item p {
+            font-size: 16px;
+            color: #888;
+        }
+        .product-item .price {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .product-item .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        .product-item .add-to-cart:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>My E-Commerce Store</h1>
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+            <a href="/cart">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <select>
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home">Home & Kitchen</option>
+                <option value="sports">Sports</option>
+            </select>
+            <div>
+                <input type="text" placeholder="Search products..." />
+                <button>Search</button>
+            </div>
+        </div>
+
+        <!-- Product List -->
+        <div class="product-list">
+            <!-- Product Item 1 -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1"> <!-- Replace with actual product image -->
+                <h3>Product 1 Name</h3>
+                <p>Category: Electronics</p>
+                <div class="price">$49.99</div>
+                <a href="/product1" class="add-to-cart">View Details</a>
+            </div>
+
+            <!-- Product Item 2 -->
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2"> <!-- Replace with actual product image -->
+                <h3>Product 2 Name</h3>
+                <p>Category: Clothing</p>
+                <div class="price">$29.99</div>
+                <a href="/product2" class="add-to-cart">View Details</a>
+            </div>
+
+            <!-- Product Item 3 -->
+            <div class="product-item">
+                <img src="product3.jpg" alt="Product 3"> <!-- Replace with actual product image -->
+                <h3>Product 3 Name</h3>
+                <p>Category: Home & Kitchen</p>
+                <div class="price">$19.99</div>
+                <a href="/product3" class="add-to-cart">View Details</a>
+            </div>
+
+            <!-- Product Item 4 -->
+            <div class="product-item">
+                <img src="product4.jpg" alt="Product 4"> <!-- Replace with actual product image -->
+                <h3>Product 4 Name</h3>
+                <p>Category: Sports</p>
+                <div class="price">$39.99</div>
+                <a href="/product4" class="add-to-cart">View Details</a>
+            </div>
+
+            <!-- Add more product items as needed -->
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My E-Commerce Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
